@@ -47,10 +47,10 @@
   --font-size-base: 14px;
   --font-size-md: 14px;
   --font-size-lg: 16px;
-  --font-size-xl: 18px;
-  --font-size-2xl: 20px;
-  --font-size-3xl: 24px;
-  --font-size-4xl: 30px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 22px;
+  --font-size-3xl: 28px;
+  --font-size-4xl: 32px;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 550;
@@ -729,7 +729,7 @@ select.form-control {
 }
 
 .title-image {
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -792,16 +792,18 @@ select.form-control {
   position: relative;
   line-height: var(--line-height-normal);
   color: var(--color-text);
+  font-size: var(--font-size-xl);
+  padding-left: 0;
 }
 
-.slide li::before {
+/* .slide li::before {
   content: "•";
   color: var(--color-primary);
   font-size: var(--font-size-lg);
   position: absolute;
   left: 0;
   top: var(--space-8);
-}
+} */
 
 /* Таймлайн */
 .timeline {
@@ -844,13 +846,14 @@ select.form-control {
 .timeline-date {
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
-  font-size: var(--font-size-lg);
   margin-bottom: var(--space-8);
+  font-size: var(--font-size-2xl);
 }
 
 .timeline-content {
   color: var(--color-text);
   line-height: var(--line-height-normal);
+  font-size: var(--font-size-xl);
 }
 
 /* Навыки */
@@ -966,7 +969,7 @@ select.form-control {
 /* Применения */
 .applications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--space-20);
 }
 
@@ -1045,6 +1048,7 @@ select.form-control {
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
+  font-size: var(--font-size-lg);
 }
 
 .salary-table th,
@@ -1200,6 +1204,22 @@ select.form-control {
   z-index: 1000;
   padding: var(--space-8) var(--space-16);
   font-size: var(--font-size-sm);
+}
+
+#slide-5 p {
+  font-size: var(--font-size-lg);
+}
+
+#slide-7 p {
+  font-size: var(--font-size-xl);
+}
+
+#slide-7 h3 {
+  font-size: var(--font-size-2xl);
+}
+
+#slide-10 p {
+  font-size: var(--font-size-lg);
 }
 
 /* Адаптивность */
